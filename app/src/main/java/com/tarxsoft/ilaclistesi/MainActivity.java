@@ -23,7 +23,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "TAG";
     private static String JSON_URL = "https://www.tariksune.com/ilac-liste.json";
+
     RecyclerView recyclerView;
     List<Drugs> drugs;
     Adapter adapter;
@@ -65,11 +67,9 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("tag","onError: "+ error.getMessage());
+                Log.d(TAG,"Hata: "+ error.getMessage());
             }
         });
-
         requestQueue.add(jsonArrayRequest);
-
     }
 }

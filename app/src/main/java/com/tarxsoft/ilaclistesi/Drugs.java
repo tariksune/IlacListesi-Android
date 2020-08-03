@@ -15,7 +15,6 @@ public class Drugs {
         this.drugBarcode = drugBarcode;
         this.drugIcon = drugIcon;
 
-
     }
 
     public String getDrugName() {

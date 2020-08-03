@@ -52,7 +52,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             drugName = itemView.findViewById(R.id.drugName);
             drugDesc = itemView.findViewById(R.id.drugDesc);
             drugBarcode = itemView.findViewById(R.id.drugBarcode);
