@@ -11,6 +11,8 @@ https://square.github.io/picasso/
 https://www.tariksune.com/ilac-liste.json
 ```
 
+- [ ] Search - Json Filter will be added.
+
 #### screenshot
 ________________
 ![](https://raw.githubusercontent.com/tariksune/IlacListesi-Android/master/screenshot.png)
