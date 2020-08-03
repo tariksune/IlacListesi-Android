@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2sp"
+    android:layout_marginTop="8sp">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24sp"
+        android:layout_marginLeft="24sp"
+        android:background="@drawable/card_bg"
+        android:paddingBottom="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/drugName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:text="Drug Name Title"
+            android:textColor="#00E676"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/drugBarcode"
+            android:fontFamily="@font/rajdhani"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/drugDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drugName"
+            android:layout_alignStart="@+id/drugName"
+            android:layout_alignLeft="@+id/drugName"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:lineSpacingExtra="8sp"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/rajdhani"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/drugBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/drugName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginRight="16sp"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            android:fontFamily="@font/rajdhani"
+            android:text="18725312563812" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/drugIcon"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/container"
+        app:srcCompat="@drawable/icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
