@@ -12,7 +12,8 @@ https://www.tariksune.com/ilac-liste.json
 ```
 - [x] Splash Screen - dev name
 - [x] RecyclerView - for drugs
-- [ ] Search - json filter will be added.
+- [x] Search - drug filter
+- [ ] Error - when searching and swiping drug list, get some errors from icons
 
 #### screenshot
 ________________
