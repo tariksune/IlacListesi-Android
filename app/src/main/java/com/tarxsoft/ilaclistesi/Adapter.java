@@ -42,7 +42,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> implements
         holder.drugName.setText(drugsFilter.get(position).getDrugName());
         holder.drugDesc.setText(drugsFilter.get(position).getDrugDesc());
         holder.drugBarcode.setText(drugsFilter.get(position).getDrugBarcode());
-//        Picasso.get().load(drugsFilter.get(position).getDrugIcon()).into(holder.drugIcon);
+        Picasso.get().load(drugsFilter.get(position).getDrugIcon()).into(holder.drugIcon);
     }
 
     @Override
