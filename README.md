@@ -10,8 +10,9 @@ https://square.github.io/picasso/
 ```
 https://www.tariksune.com/ilac-liste.json
 ```
-
-- [ ] Search - Json Filter will be added.
+- [x] Splash Screen - dev name
+- [x] RecyclerView - for drugs
+- [ ] Search - json filter will be added.
 
 #### screenshot
 ________________
