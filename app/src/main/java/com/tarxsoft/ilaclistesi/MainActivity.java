@@ -27,7 +27,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "TAG";
-    private static String JSON_URL = "https://www.tariksune.com/ilac-liste.json";
+    private static String JSON_URL = "https://805a3cb0dfe6.ngrok.io/api/drugs";
 
     RecyclerView recyclerView;
     List<Drugs> drugs;
@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         JSONObject drugObject = response.getJSONObject(i);
                         Drugs drug = new Drugs();
-                        drug.setDrugName(drugObject.getString("C").toString());
-                        drug.setDrugDesc(drugObject.getString("D").toString());
-                        drug.setDrugBarcode(drugObject.getString("B").toString());
-                        drug.setDrugIcon(drugObject.getString("G").toString());
+                        drug.setDrugName(drugObject.getString("drugName").toString());
+                        drug.setDrugDesc(drugObject.getString("drugActiveSubstance").toString());
+                        drug.setDrugBarcode(drugObject.getString("drugBarcode").toString());
+                        drug.setDrugIcon(drugObject.getString("drugImage").toString());
                         drugs.add(drug);
 
                     } catch (JSONException e) {
