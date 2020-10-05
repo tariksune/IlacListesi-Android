@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">İlaç Listesi</string>
+
+    <string name="about_head">hakkında</string>
+    <string name="app_about">İlaç Listesi içeriğini ilaç isimlerine göre filtrelemenizi sağlamaktadır. Var olan liste içerisinden ilaç ismi ile arama yapıp, ilgili ilaca ait etken madde ve barkod numarasına erişebilirisiniz. </string>
+    <string name="app_about_2dn"><b>TarxSoft</b>"'"un diğer uygulamaları için aşağıdaki logoya tıklayabilirsiniz.</string>
+
 </resources>

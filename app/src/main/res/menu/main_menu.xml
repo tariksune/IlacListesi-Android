@@ -4,7 +4,21 @@
     <item android:id="@+id/search"
         android:title="Arama"
         android:icon="@drawable/ic_search"
-        app:showAsAction="always"
+        app:showAsAction="withText|always"
         app:actionViewClass="android.widget.SearchView"
         />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:title="daha"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/about"
+                android:title="Hakkında"
+                android:icon="@drawable/ic_about"
+                />
+        </menu>
+    </item>
 </menu>
