@@ -137,13 +137,14 @@ public class MainActivity extends AppCompatActivity {
         adView.loadAd(adRequest);
         recyclerView.setPadding(0, 0, 0, adView.getHeight());
         recyclerView.setClipToPadding(false);
+        publisherInterstitialAd = new PublisherInterstitialAd(this);
+        publisherInterstitialAd.setAdUnitId("/6499/example/interstitial");
+        publisherInterstitialAd.loadAd(new PublisherAdRequest.Builder().build());
 
     }
 
     public void Ads() {
-        publisherInterstitialAd = new PublisherInterstitialAd(this);
-        publisherInterstitialAd.setAdUnitId("/6499/example/interstitial");
-        publisherInterstitialAd.loadAd(new PublisherAdRequest.Builder().build());
+
         if (publisherInterstitialAd.isLoaded()){
             publisherInterstitialAd.show();
         }else{
