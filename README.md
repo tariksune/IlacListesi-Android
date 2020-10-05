@@ -6,14 +6,22 @@ ________________
 https://developer.android.com/training/volley
 https://square.github.io/picasso/
 ```
- - JsonFile:
+ - JsonFile for manual:
 ```
 https://www.tariksune.com/ilac-liste.json
 ```
+ - Restful CRUD API:
+```
+https://github.com/tariksune/IlacListesi-SpringBoot
+```
+
+
 - [x] Splash Screen - dev name
 - [x] RecyclerView - for drugs
 - [x] Search - drug filter
-- [ ] Error - when searching and swiping drug list, get some errors from icons
+- [x] Restful CRUD API
+ - Create, Retrieve, Update and Delete
+- [x] [Ngrok] for expose a local web server to the internet
 
 #### screenshot
 ________________
@@ -24,3 +32,6 @@ ________________
 - twitter: https://www.twitter.com/tariksune
 - linkedin: https://linkedin.com/in/tariksune
 - medium: https://www.medium.com/@tariksune
+
+
+ [Ngrok]: <https://ngrok.com/>
