@@ -19,9 +19,10 @@ https://github.com/tariksune/IlacListesi-SpringBoot
 - [x] Splash Screen - dev name
 - [x] RecyclerView - for drugs
 - [x] Search - drug filter
-- [x] Restful CRUD API
- - Create, Retrieve, Update and Delete
-- [x] [Ngrok] for expose a local web server to the internet
+- [x] Restful CRUD API - create, retrieve, update and delete
+- [x] [Ngrok] - expose a local web server to the internet
+- [x] AdMob - banner and interstitial
+ - interstitialAd will display every 90 sec and change activity
 
 #### screenshot
 ________________
