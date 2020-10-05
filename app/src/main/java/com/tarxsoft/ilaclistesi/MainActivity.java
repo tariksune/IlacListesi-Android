@@ -2,6 +2,7 @@ package com.tarxsoft.ilaclistesi;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,11 +34,15 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
     private AdView adView;
     private PublisherInterstitialAd publisherInterstitialAd;
+    ScheduledExecutorService scheduledExecutorService;
 
     private static final String TAG = "TAG";
     private static String JSON_URL = "https://805a3cb0dfe6.ngrok.io/api/drugs";
@@ -56,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.drugList);
         drugs = new ArrayList<>();
         prepareAds();
+        loadInterstitialAd();
         listOfDrugs();
     }
 
@@ -150,6 +156,28 @@ public class MainActivity extends AppCompatActivity {
         }else{
             finish();
         }
+
+    }
+
+    private void loadInterstitialAd(){
+        scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
+        scheduledExecutorService.scheduleAtFixedRate(new Runnable() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        boolean stateAlive = getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.RESUMED);
+                        if (stateAlive && publisherInterstitialAd.isLoaded()){
+                            publisherInterstitialAd.show();
+                        }else{
+
+                        }
+                        prepareAds();
+                    }
+                });
+            }
+        },90,90, TimeUnit.SECONDS);
 
     }
 
