@@ -5,4 +5,8 @@
     <string name="app_about">İlaç Listesi içeriğini ilaç isimlerine göre filtrelemenizi sağlamaktadır. Var olan liste içerisinden ilaç ismi ile arama yapıp, ilgili ilaca ait etken madde ve barkod numarasına erişebilirisiniz. </string>
     <string name="app_about_2dn"><b>TarxSoft</b>"'"un diğer uygulamaları için aşağıdaki logoya tıklayabilirsiniz.</string>
 
+    <string name="contact_head">iletişim</string>
+    <string name="contact_info">Beta aşamasında olan uygulamamızda problemler oluşabilir. Anlayışınız için şimdiden teşekkür ederiz. İstek, şikayet ve önerilerinizi lütfen bizimle paylaşın.</string>
+    <string name="contact_info_2nd"><b>tarxsoft@gmail.com</b> adresine mail gönderebilirsiniz.</string>
+
 </resources>
