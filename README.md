@@ -7,7 +7,6 @@ https://developer.android.com/training/volley
 https://square.github.io/picasso/
 https://developers.google.com/admob/android/quick-start
 https://airbnb.io/lottie/#/android
-
 ```
  - JsonFile for manual:
 ```
