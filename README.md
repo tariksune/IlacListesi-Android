@@ -25,7 +25,7 @@ https://github.com/tariksune/IlacListesi-SpringBoot
 - [x] [Ngrok] - expose a local web server to the internet
 - [x] AdMob - banner and interstitial
  - interstitialAd will display every 90 sec and change activity
-- [x] [LottiFiles] - animation for loading screen
+- [x] [LottieFiles] - animation for loading screen
 
 #### screenshot
 ________________
@@ -39,4 +39,4 @@ ________________
 
 
  [Ngrok]: <https://ngrok.com/>
- [LottiFiles]: <https://lottiefiles.com/>
+ [LottieFiles]: <https://lottiefiles.com/>
