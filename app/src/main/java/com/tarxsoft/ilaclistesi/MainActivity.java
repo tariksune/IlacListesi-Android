@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     GridLayoutManager gridLayoutManager;
     List<Drugs> drugs;
     Adapter adapter;
-    ProgressBar progressBar;
+    LottieAnimationView loadingLabGlass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
     private void listOfDrugs() {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        progressBar = (ProgressBar)findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.VISIBLE);
+        loadingLabGlass = (LottieAnimationView) findViewById(R.id.loadingLabGlass);
+        loadingLabGlass.setVisibility(View.VISIBLE);
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, JSON_URL, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                progressBar.setVisibility(View.INVISIBLE);
+                loadingLabGlass.setVisibility(View.INVISIBLE);
                 gridLayoutManager = new GridLayoutManager(getApplicationContext(),1);
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(gridLayoutManager);
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                progressBar.setVisibility(View.INVISIBLE);
+                loadingLabGlass.setVisibility(View.INVISIBLE);
                 Log.d(TAG,"Hata: "+ error.getMessage());
             }
         });
