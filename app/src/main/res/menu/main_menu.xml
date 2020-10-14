@@ -4,6 +4,7 @@
     <item android:id="@+id/search"
         android:title="Arama"
         android:icon="@drawable/ic_search"
+        android:imeOptions="flagForceAscii"
         app:showAsAction="withText|always"
         app:actionViewClass="android.widget.SearchView"
         />

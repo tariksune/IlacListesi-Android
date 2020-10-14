@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2">
+        android:layout_weight="0.1">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,7 +46,7 @@
         android:layout_height="0px"
         android:gravity="center"
         android:padding="15sp"
-        android:layout_weight="0.6">
+        android:layout_weight="0.7">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,14 +64,32 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:fontFamily="@font/poppinsmedium"
-                android:textSize="50sp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_about_2dn"
+                android:fontFamily="@font/rajdhani"
+                android:drawableLeft="@drawable/ic_warning"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="10sp"
                 android:gravity="center"
                 android:textColor="@color/colorPrimaryDark"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/app_about_2dn"
-                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/app_about_3rd"
+                android:fontFamily="@font/rajdhani"
                 android:textSize="15sp"
                 android:gravity="center"
                 android:textColor="@color/colorPrimaryDark"/>

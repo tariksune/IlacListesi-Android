@@ -2,8 +2,9 @@
     <string name="app_name">İlaç Listesi</string>
 
     <string name="about_head">hakkında</string>
-    <string name="app_about">İlaç Listesi içeriğini ilaç isimlerine göre filtrelemenizi sağlamaktadır. Var olan liste içerisinden ilaç ismi ile arama yapıp, ilgili ilaca ait etken madde ve barkod numarasına erişebilirisiniz. </string>
-    <string name="app_about_2dn"><b>TarxSoft</b>"'"un diğer uygulamaları için aşağıdaki logoya tıklayabilirsiniz.</string>
+    <string name="app_about">21.000"'"in üzerinde ilaçların etken maddeleri ve barkodları yer almaktadır. İlaçların isimlerine göre filtreleme yapabilirsiniz. Var olan liste içerisinden ilaç ismi ile arama yapıp, ilgili ilaca ait etken madde ve barkod numarasına erişebilirisiniz. </string>
+    <string name="app_about_2dn">Uygulama içinde yer alan ilaçların ve etken maddelerinin doğruluğunu garanti etmemekteyiz.</string>
+    <string name="app_about_3rd"><b>TarxSoft</b>"'"un diğer uygulamaları için aşağıdaki logoya tıklayabilirsiniz.</string>
 
     <string name="contact_head">iletişim</string>
     <string name="contact_info">Beta aşamasında olan uygulamamızda problemler oluşabilir. Anlayışınız için şimdiden teşekkür ederiz. İstek, şikayet ve önerilerinizi lütfen bizimle paylaşın.</string>
