@@ -27,6 +27,10 @@ https://github.com/tariksune/IlacListesi-SpringBoot
  - interstitialAd will display every 90 sec and change activity
 - [x] [LottieFiles] - animation for loading screen
 
+#### download
+________________
+[![](https://raw.githubusercontent.com/tariksune/IlacListesi-Android/master/googleplay.png)](https://play.google.com/store/apps/details?id=com.tarxsoft.ilaclistesi)
+
 #### screenshot
 ________________
 ![](https://raw.githubusercontent.com/tariksune/IlacListesi-Android/master/screenshot.png)
